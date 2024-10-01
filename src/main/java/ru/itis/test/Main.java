@@ -11,6 +11,22 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+
+        List<Integer> integers = new ArrayList<>();
+
+        integers.add(1);
+        integers.add(2);
+        integers.add(3);
+        integers.add(4);
+
+        for (int i = 0; i <integers.size() ; i++) {
+            System.out.println(integers.get(i));
+        }
+
+        for (Integer integer : integers){
+            System.out.println(integer);
+        }
+
 //        Dog dog = new Dog("Рекс");
 //        dog.play();
 
@@ -31,38 +47,38 @@ public class Main {
 //
 //        playable.play();
 //
+////
+//        List<Integer> integers = new ArrayList<>();
+//        integers.add(new Integer(4));
+//        integers.add(new Integer(3));
+//        integers.add(new Integer(2));
+//        integers.add(new Integer(1));
 //
-        List<Integer> integers = new ArrayList<>();
-        integers.add(new Integer(4));
-        integers.add(new Integer(3));
-        integers.add(new Integer(2));
-        integers.add(new Integer(1));
-
-
 //
-        System.out.println(integers);
+////
+//        System.out.println(integers);
+////
+//        Collections.sort(integers);
+////
+//        System.out.println(integers);
 //
-        Collections.sort(integers);
 //
-        System.out.println(integers);
-
-
-
-//        Отрицательное число, если o1 должно быть меньше o2.
-//                Ноль, если o1 и o2 считаются равными.
-//                Положительное число, если o1 должно быть больше o2.
-        Comparator<Integer> comparator = (Integer o1, Integer o2) -> {
-            //o1>o2
-            if (o1 - o2 > 0) {
-                return o1 - o2;
-                //o1<o2
-            } else if (o1 - o2 < 0) {
-                return o1 - o2;
-            }
-            //o1 = o2
-            return 0;
-        };
 //
+////        Отрицательное число, если o1 должно быть меньше o2.
+////                Ноль, если o1 и o2 считаются равными.
+////                Положительное число, если o1 должно быть больше o2.
+//        Comparator<Integer> comparator = (Integer o1, Integer o2) -> {
+//            //o1>o2
+//            if (o1 - o2 > 0) {
+//                return o1 - o2;
+//                //o1<o2
+//            } else if (o1 - o2 < 0) {
+//                return o1 - o2;
+//            }
+//            //o1 = o2
+//            return 0;
+//        };
+////
 //
 //        Collections.sort(integers, comparator);
 //

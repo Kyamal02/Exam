@@ -6,9 +6,10 @@ import ru.itis.ticket1.task2.LexicographicalComparator;
 import static org.junit.Assert.assertTrue;
 
 public class LexicographicalComparatorTest {
-
+    // Указать аннотацию Test
     @Test
     public void testCompare() {
+        // Создаем экземпляр компаратора для тестирования
         LexicographicalComparator comparator = new LexicographicalComparator();
 
         // Пример простого сравнения
